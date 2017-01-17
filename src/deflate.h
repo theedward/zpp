@@ -20,7 +20,7 @@
    the crc code when it is not needed.  For shared libraries, gzip encoding
    should be left enabled. */
 #ifndef NO_GZIP
-#  define GZIP
+#  define WITH_GZIP
 #endif
 
 /* ===========================================================================
