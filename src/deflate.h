@@ -52,7 +52,7 @@
 /* size of bit buffer in bi_buf */
 
 #define INIT_STATE    42    /* zlib header -> BUSY_STATE */
-#ifdef GZIP
+#ifdef WITH_GZIP
 #  define GZIP_STATE  57    /* gzip header -> BUSY_STATE | EXTRA_STATE */
 #endif
 #define EXTRA_STATE   69    /* gzip extra block -> NAME_STATE */
