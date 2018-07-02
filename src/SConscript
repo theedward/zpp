@@ -2,4 +2,9 @@ Import('env')
 
 zlib = Glob("*.c")
 
+# The path must come from the root of the project because that's where the SConstruct file (that provides the env) is
+env.Append( CXXFLAGS = [
+	"-Isrc/maestro_cpp_client_sdk/libs/zpp/src"
+])
+
 Return('zlib')
